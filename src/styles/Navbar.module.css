@@ -1,0 +1,44 @@
+.mainDiv,
+.titleDiv,
+.midDiv,
+.btnDiv {
+    display: flex;
+    align-items: center;
+}
+
+.mainDiv {
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.midDiv {
+    gap: 5vw;
+    justify-content: space-between;
+}
+
+.title {
+    color: #3559E0;
+    width: 4vw;
+}
+
+.btn {
+    padding: 2vh 1vw;
+    border-radius: 8px;
+    border: none;
+    background-color: #3559E0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.btn:hover {
+    border: 1px solid #3559E0;
+    background-color: white;
+    color: #3559E0;
+}
+
+.pLink,
+.titleLink {
+    text-decoration: none;
+    color: black;
+}
