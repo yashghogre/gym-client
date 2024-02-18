@@ -21,7 +21,46 @@
   flex-direction: column;
 }
 
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image {
   object-fit: contain;
-  width: 30vw;
+  /* width: 50vw; */
+  height: 75vh
+}
+
+.tagline {
+  line-height: 3.5vh;
+}
+
+.leftDiv {
+  width: 40vw;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5vh;
+}
+
+.btn1, .btn2 {
+  padding: 2vh 3vw;
+  border-radius: 5px;
+  border: none;
+  font-size: 1vw;
+}
+
+.btn1 {
+  background-color: #3559E0;
+  color: white;
+}
+
+.btn2 {
+  color: #3559E0;
+  background-color: white;
+  border: 1px solid #3559E0;
 }
