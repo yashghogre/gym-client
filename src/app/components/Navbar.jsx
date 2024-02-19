@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link className={styles.pLink} href={'/'}>
                     <p className={styles.mDP}>Features</p>
                 </Link>
-                <Link className={styles.pLink} href={'/'}>
+                <Link className={styles.pLink} href={'/pricing'}>
                     <p className={styles.mDP}>Pricing</p>
                 </Link>
                 <Link className={styles.pLink} href={'/'}>

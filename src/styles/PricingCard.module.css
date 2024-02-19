@@ -1,0 +1,59 @@
+.mainDiv {
+    border: solid 1px black;
+    padding: 3vh 3vw;
+    border-radius: 10px;
+    border: solid 1px #3559E0;
+    box-shadow: #3559E0 0px 0px 20px 5px;
+}
+
+.mb, .titleDiv, .priceDiv, .featDiv, .btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleDiv {
+    height: 7vh;
+}
+
+.title {
+    color: #3559E0;
+    font-size: 1.8vw;
+}
+
+.btn {
+    color: white;
+    background-color: #3559E0;
+    border: none;
+    padding: 1.5vh 4.5vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mb {
+    /* background-color: #3559E0; */
+    width: 100%;
+}
+
+.mbText {
+    color: white;
+    position: relative;
+}
+
+.ulImg {
+    /* object-fit: contain; */
+    position: absolute;
+    top: 26vh;
+}
+
+.rlprice {
+    font-weight: 800;
+    font-size: 1.7vw;
+}
+
+.featList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8vh;
+}

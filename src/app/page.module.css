@@ -43,7 +43,10 @@
 
 .btnDiv {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+  gap: 5vw;
+  align-items: center;
   padding-top: 5vh;
 }
 
