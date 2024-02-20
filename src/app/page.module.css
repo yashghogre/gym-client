@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   padding-top: 10vh;
+  z-index: 10;
 }
 
 .mainText {
@@ -66,4 +67,16 @@
   color: #3559E0;
   background-color: white;
   border: 1px solid #3559E0;
+}
+
+.waveDiv {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave {
+  background-image: url('./../../public/wave.svg');
 }

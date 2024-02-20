@@ -2,10 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8vh;
+    padding-top: 0vh;
+    height: 110vh;
+    margin-top: -15vh;
 }
 
 .cardsDiv {
     display: flex;
     gap: 5vw;
+}
+
+.waveDiv {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wave {
+    background-image: url('./../../public/wave2.svg');
 }
