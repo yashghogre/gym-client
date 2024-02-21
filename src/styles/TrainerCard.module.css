@@ -1,0 +1,32 @@
+.mainDiv {
+    display: flex;
+    /* border-radius: 40% 0px 0px 40%; */
+    gap: 5vw;
+    /* background-color: #9CB2FF; */
+    color: white;
+    /* padding-right: 5vw; */
+    /* background-image: linear-gradient(to right, #3559E0, #9cb1ffb3) */
+}
+
+/* .imgDiv {
+} */
+
+.img {
+    object-fit: contain;
+    height: 25vh;
+    clip-path: circle(8.5vh)
+        /* clip-path: circle(93.2px) */
+}
+
+.name {
+    font-size: 1.7vw;
+    color: white;
+    text-shadow: 0 0 21px white;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    list-style-type: circle;
+}

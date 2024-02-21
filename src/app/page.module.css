@@ -5,6 +5,10 @@
   z-index: 10;
 }
 
+.mainDiv {
+  height: calc(100vh - 97.43px);
+}
+
 .mainText {
   font-size: 2.8vw;
 }
@@ -26,12 +30,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-image: url('./../../public/blob.svg'); */
+  /* aspect-ratio: 960/300; */
+  /* width: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
 }
 
 .image {
   object-fit: contain;
   /* width: 50vw; */
-  height: 75vh
+  height: 76.5vh
 }
 
 .tagline {
@@ -56,6 +66,7 @@
   border-radius: 5px;
   border: none;
   font-size: 1vw;
+  cursor: pointer;
 }
 
 .btn1 {
@@ -79,4 +90,37 @@
 
 .wave {
   background-image: url('./../../public/wave.svg');
+}
+
+.trainerDiv {
+  /* margin-top: -2.5vh; */
+  background-image: url('./../../public/tbg.svg');
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tTitleDiv {
+  text-align: center;
+  padding: 2vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tTitle {
+  color: white;
+  background-color: #3559E0;
+  width: 17vw;
+  border-radius: 10px;
+}
+
+.tCardDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  margin-bottom: 5vh;
+  padding-bottom: 3vh;
 }

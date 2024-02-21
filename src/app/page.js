@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import TrainerCard from "./components/TrainerCard";
 
 export default function Home() {
   return (
@@ -19,10 +20,20 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.imgDiv}>
-            <Image src={'/girlInGym.png'} height={500} width={500} alt="girl" className={styles.image} />
+            <Image src={'/gymImg.png'} height={500} width={500} alt="girl" className={styles.image} />
           </div>
         </div>
         
+      </div>
+
+      <div className={styles.trainerDiv}>
+        <div className={styles.tTitleDiv}>
+          <h1 className={styles.tTitle}>Our Trainers</h1>
+        </div>
+        <div className={styles.tCardDiv}>
+          <TrainerCard img = '/trainer1.jpg' name = "Ben Dover" side = 'left' />
+          <TrainerCard img = '/trainer2.jpg' name = "Ice Valo Come" side = 'right' />
+        </div>
       </div>
     </main>
   );
