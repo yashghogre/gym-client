@@ -24,7 +24,7 @@
 .btn {
     padding: 2vh 1vw;
     border-radius: 8px;
-    border: none;
+    border: solid 1px #3559E0;
     background-color: #3559E0;
     color: white;
     cursor: pointer;

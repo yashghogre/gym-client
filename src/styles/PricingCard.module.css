@@ -24,10 +24,17 @@
 .btn {
     color: white;
     background-color: #3559E0;
-    border: none;
     padding: 1.5vh 4.5vw;
     border-radius: 5px;
     cursor: pointer;
+    border: solid 1px #3559E0;
+    transition: all 0.25s;
+}
+
+.btn:hover {
+    border: solid 1px #3559E0;
+    color: #3559E0;
+    background-color: white;
 }
 
 .mb {
