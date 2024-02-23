@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import TrainerCard from "./components/TrainerCard";
+import FeatureCard from "./components/FeatureCard";
 
 export default function Home() {
   return (
@@ -23,7 +24,19 @@ export default function Home() {
             <Image src={'/gymImg.png'} height={500} width={500} alt="girl" className={styles.image} />
           </div>
         </div>
-        
+
+      </div>
+
+      <div className={styles.featuresDiv} style={{ paddingTop: '5vh'}}>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <h1 style={{color: 'white'}}>Our Features</h1>
+        </div>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '5vh'}}>
+          <FeatureCard />
+          <FeatureCard />
+          <FeatureCard />
+          <FeatureCard />
+        </div>
       </div>
 
       <div className={styles.trainerDiv}>
@@ -31,10 +44,12 @@ export default function Home() {
           <h1 className={styles.tTitle}>Our Trainers</h1>
         </div>
         <div className={styles.tCardDiv}>
-          <TrainerCard img = '/trainer1.jpg' name = "Ben Dover" side = 'left' />
-          <TrainerCard img = '/trainer2.jpg' name = "Ice Valo Come" side = 'right' />
+          <TrainerCard img='/trainer1.jpg' name="Ben Dover" side='left' />
+          <TrainerCard img='/trainer2.jpg' name="Ice Valo Come" side='right' />
         </div>
       </div>
+
+
     </main>
   );
 }

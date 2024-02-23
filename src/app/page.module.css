@@ -24,6 +24,7 @@
   /* text-decoration: underline; */
   display: flex;
   flex-direction: column;
+  font-style: italic;
 }
 
 .imgDiv {
@@ -61,7 +62,8 @@
   padding-top: 5vh;
 }
 
-.btn1, .btn2 {
+.btn1,
+.btn2 {
   padding: 2vh 3vw;
   border-radius: 5px;
   border: none;
@@ -123,4 +125,14 @@
   gap: 5vh;
   /* margin-bottom: 5vh; */
   padding-bottom: 3vh;
+}
+
+.featuresDiv {
+  background-image: url('./../../public/feat_bg.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-top: -3vh;
+  padding-bottom: 5vh;
 }
