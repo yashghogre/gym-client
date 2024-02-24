@@ -1,3 +1,16 @@
+.g1icon, .g3icon {
+  position: absolute;
+  right: 10vw;
+  /* top: 40vh; */
+  transform: rotate(30deg);
+}
+
+.g2icon, .g4icon {
+  position: absolute;
+  left: 10vw;
+  transform: rotate(-30deg);
+}
+
 .main {
   display: flex;
   justify-content: space-evenly;

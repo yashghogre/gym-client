@@ -6,17 +6,18 @@
     /* width: 50vw; */
     height: 20.5vh;
     /* background-color: #6483ff; */
-    background-color: #3559E0;
-    border-radius: 60px;
+    background-color: #7f9bff;
+    /* border-radius: 30px; */
     border: solid 8px #0C359E;
     transition: all 0.4s;
+    /* padding: 0 3vw; */
 }
 
-.mainDiv:hover {
+/* .mainDiv:hover {
     transform: skewX(10deg);
     backdrop-filter: blur(5px);
-    /* transform: skew(10deg); */
-}
+    transform: translate3d(0, 0, 60px);
+} */
 
 .imgDiv {
     display: flex;
@@ -37,3 +38,65 @@
     justify-content: center; */
     color: white;
 }
+
+.mainDiv {
+    width: 400px;
+    height: 254px;
+    /* background: lightgrey; */
+    position: relative;
+    transform: skewY(-10deg);
+    border: 5px solid #5774EB;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  
+  .mainDiv::before {
+    content: '';
+    width: 10px;
+    height: 254px;
+    background: #5774EB;
+    position: absolute;
+    top: -5px;
+    left: -14.7px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    border: none;
+    transition: all 0.5s;
+  }
+  
+  .mainDiv::after {
+    content: '';
+    height: 10px;
+    width: 400px;
+    background: #6d74e3;
+    position: absolute;
+    top: -14.7px;
+    left: -5px;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    border: none;
+    transition: all 0.5s;
+  }
+  
+  .mainDiv:hover {
+    transform: skewY(0deg);
+  }
+  
+  .mainDiv:hover::before {
+    width: 0px;
+    height: 249px;
+    left: 0;
+    top: 0.1px;
+  }
+  
+  .mainDiv:hover::after {
+    width: 184px;
+    height: 0px;
+    left: 0.1px;
+    top: 0;
+  }
+  
+  .imgDiv .textDiv {
+    padding: 10px;
+    color: #323232;
+  }
