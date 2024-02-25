@@ -27,7 +27,7 @@ export default function Home() {
 
       </div>
 
-      <div className={styles.featuresDiv} style={{ paddingTop: '5vh' }}>
+      <div className={styles.featuresDiv} id="features" style={{ paddingTop: '5vh' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <h1 style={{ color: 'white', marginBottom: '10vh' }}>Our Features</h1>
         </div>
@@ -58,6 +58,26 @@ export default function Home() {
         <div className={styles.tCardDiv}>
           <TrainerCard img='/trainer1.jpg' name="Ben Dover" side='left' />
           <TrainerCard img='/trainer2.jpg' name="Ice Valo Come" side='right' />
+        </div>
+
+      </div>
+      <div className={styles.locationDiv} id="location">
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><h3 style={{ fontSize: '1.7vw' }}>Contact Us!</h3></div>
+        <div className={styles.mapDiv}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.64577089998542!2d78.97462819788775!3d21.099312708753647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd495277835628b%3A0xeeb90a6d36018ae8!2sYCCE%20Gauri-inn%20Hostel%20Wanadongri%20Hingna%20Road%20Nagpur!5e0!3m2!1sen!2sin!4v1708782475656!5m2!1sen!2sin" width={600} height={450} style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className={styles.map}></iframe>
+          </div>
+          <div className={styles.lTextDiv}>
+            <div>
+              <h3>Mr. Les Bian</h3>
+              <h4>+91 9999999999</h4>
+              <h4 style={{ textDecoration: 'underline' }}>lesgym@gmail.com</h4>
+              <h4>Body Temple Gym, Near Dravesh 5 Apartment, Matoshri Nagar, Wanadongri, Hingna, Nagpur, Maharashtra - 441110</h4>
+            </div>
+            <div>
+
+            </div>
+          </div>
         </div>
       </div>
 

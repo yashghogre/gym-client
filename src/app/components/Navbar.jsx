@@ -11,17 +11,17 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className={styles.midDiv}>
-                <Link className={styles.pLink} href={'/'}>
+                <Link className={styles.pLink} href={'/#features'}>
                     <p className={styles.mDP}>Features</p>
                 </Link>
                 <Link className={styles.pLink} href={'/pricing'}>
                     <p className={styles.mDP}>Pricing</p>
                 </Link>
                 <Link className={styles.pLink} href={'/'}>
-                    <p className={styles.mDP}>Community</p>
+                    <p className={styles.mDP}>Testimonials</p>
                 </Link>
-                <Link className={styles.pLink} href={'/'}>
-                    <p className={styles.mDP}>Lifestyle</p>
+                <Link className={styles.pLink} href={'/#location'}>
+                    <p className={styles.mDP}>Contact Us!</p>
                 </Link>
             </div>
             <div className={styles.btnDiv}>

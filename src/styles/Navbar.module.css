@@ -42,3 +42,12 @@
     text-decoration: none;
     color: black;
 }
+
+.mDP {
+    padding: 0.5vh 0.3vw;
+    border-radius: 5px;
+}
+
+.mDP:hover {
+    background-color: rgb(240, 240, 240);
+}
