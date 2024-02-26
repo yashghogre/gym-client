@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import TrainerCard from "./components/TrainerCard";
 import FeatureCard from "./components/FeatureCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -68,14 +69,25 @@ export default function Home() {
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.64577089998542!2d78.97462819788775!3d21.099312708753647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd495277835628b%3A0xeeb90a6d36018ae8!2sYCCE%20Gauri-inn%20Hostel%20Wanadongri%20Hingna%20Road%20Nagpur!5e0!3m2!1sen!2sin!4v1708782475656!5m2!1sen!2sin" width={600} height={450} style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className={styles.map}></iframe>
           </div>
           <div className={styles.lTextDiv}>
-            <div>
+            <div className={styles.cInfoDiv}>
               <h3>Mr. Les Bian</h3>
               <h4>+91 9999999999</h4>
               <h4 style={{ textDecoration: 'underline' }}>lesgym@gmail.com</h4>
               <h4>Body Temple Gym, Near Dravesh 5 Apartment, Matoshri Nagar, Wanadongri, Hingna, Nagpur, Maharashtra - 441110</h4>
             </div>
-            <div>
-
+            <div className={styles.socialsDiv} style={{ width: '18vw', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '3vh' }}>
+              <Link href={'/'} className={styles.socialLink}>
+                <Image src={'/insta_logo.png'} height={50} width={50} alt="insta-logo" className={styles.socialIcon} title="Instagram" />
+              </Link>
+              <Link href={'/'}>
+                <Image src={'/fb_logo.webp'} height={50} width={50} alt="fb-logo" className={styles.socialIcon} title="Facebook" />
+              </Link>
+              <Link href={'/'}>
+                <Image src={'/x_logo.png'} height={50} width={50} alt="x-logo" className={styles.socialIcon} title="X" />
+              </Link>
+              <Link href={'/'}>
+                <Image src={'/whatsapp_logo.png'} height={50} width={50} alt="wa-logo" className={styles.socialIcon} title="WhatsApp" />
+              </Link>
             </div>
           </div>
         </div>

@@ -151,7 +151,7 @@
 }
 
 .locationDiv {
-  margin-bottom: 5vh;
+  /* margin-bottom: 5vh; */
   background-color: #3559E0;
   color: white;
 }
@@ -164,6 +164,13 @@
 
 .map {
   width: 45vw;
+  border-radius: 10px;
+}
+
+.cInfoDiv {
+  padding-left: 1vw;
+  background-color: #7990ed7e;
+  border-radius: 10px;
 }
 
 .lTextDiv {
@@ -172,6 +179,21 @@
   flex-direction: column;
 }
 
-.lTextDiv>h3 {
-  /* margin-top: -1vh; */
+/* .lTextDiv>h3 {
+  margin-top: -1vh;
+} */
+
+.socialsDiv {
+  background-color: #7990ed7e;
+  border-radius: 10px;
+  padding: 1vw 1vh;
+}
+
+.socialIcon {
+  transition: all 0.4s;
+}
+
+.socialIcon:hover {
+  transform: translateY(-10px);
+  /* border-bottom: solid 1px black; */
 }
