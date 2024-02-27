@@ -3,6 +3,8 @@ import styles from "./page.module.css";
 import TrainerCard from "./components/TrainerCard";
 import FeatureCard from "./components/FeatureCard";
 import Link from "next/link";
+import TestCard from "./components/TestCard";
+import TestTitle from "./components/TestTitle";
 
 export default function Home() {
   return (
@@ -30,7 +32,7 @@ export default function Home() {
 
       <div className={styles.featuresDiv} id="features" style={{ paddingTop: '5vh' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <h1 style={{ color: 'white', marginBottom: '10vh' }}>Our Features</h1>
+          <h1 className={styles.featuresTitle} style={{ color: 'white', marginBottom: '10vh' }}>Our Features</h1>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '0vh', marginBottom: '5vh' }}>
           <div style={{ width: '55vw', display: 'flex', justifyContent: 'flex-start' }}>
@@ -60,8 +62,13 @@ export default function Home() {
           <TrainerCard img='/trainer1.jpg' name="Ben Dover" side='left' />
           <TrainerCard img='/trainer2.jpg' name="Ice Valo Come" side='right' />
         </div>
-
       </div>
+
+      <div className={styles.testDiv} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+        <TestTitle />
+        <TestCard />
+      </div>
+
       <div className={styles.locationDiv} id="location">
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><h3 style={{ fontSize: '1.7vw' }}>Contact Us!</h3></div>
         <div className={styles.mapDiv}>
@@ -75,18 +82,18 @@ export default function Home() {
               <h4 style={{ textDecoration: 'underline' }}>lesgym@gmail.com</h4>
               <h4>Body Temple Gym, Near Dravesh 5 Apartment, Matoshri Nagar, Wanadongri, Hingna, Nagpur, Maharashtra - 441110</h4>
             </div>
-            <div className={styles.socialsDiv} style={{ width: '18vw', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '3vh' }}>
+            <div className={styles.socialsDiv} style={{ width: '18vw', display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginTop: '3vh' }}>
               <Link href={'/'} className={styles.socialLink}>
-                <Image src={'/insta_logo.png'} height={50} width={50} alt="insta-logo" className={styles.socialIcon} title="Instagram" />
+                <Image src={'/insta_logo.png'} height={40} width={40} alt="insta-logo" className={styles.socialIcon} title="Instagram" />
               </Link>
               <Link href={'/'}>
-                <Image src={'/fb_logo.webp'} height={50} width={50} alt="fb-logo" className={styles.socialIcon} title="Facebook" />
+                <Image src={'/fb_logo.webp'} height={40} width={40} alt="fb-logo" className={styles.socialIcon} title="Facebook" />
               </Link>
               <Link href={'/'}>
-                <Image src={'/x_logo.png'} height={50} width={50} alt="x-logo" className={styles.socialIcon} title="X" />
+                <Image src={'/x_logo.png'} height={40} width={40} alt="x-logo" className={styles.socialIcon} title="X" />
               </Link>
               <Link href={'/'}>
-                <Image src={'/whatsapp_logo.png'} height={50} width={50} alt="wa-logo" className={styles.socialIcon} title="WhatsApp" />
+                <Image src={'/whatsapp_logo.png'} height={40} width={40} alt="wa-logo" className={styles.socialIcon} title="WhatsApp" />
               </Link>
             </div>
           </div>

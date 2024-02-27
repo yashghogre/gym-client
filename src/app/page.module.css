@@ -1,11 +1,13 @@
-.g1icon, .g3icon {
+.g1icon,
+.g3icon {
   position: absolute;
   right: 10vw;
   /* top: 40vh; */
   transform: rotate(30deg);
 }
 
-.g2icon, .g4icon {
+.g2icon,
+.g4icon {
   position: absolute;
   left: 10vw;
   transform: rotate(-30deg);
@@ -150,6 +152,10 @@
   padding-bottom: 5vh;
 }
 
+.featuresTitle {
+  text-shadow: 0 0 21px white;
+}
+
 .locationDiv {
   /* margin-bottom: 5vh; */
   background-color: #3559E0;
@@ -196,4 +202,16 @@
 .socialIcon:hover {
   transform: translateY(-10px);
   /* border-bottom: solid 1px black; */
+}
+
+.testDiv {
+  background-image: url('./../../public/gym_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  /* margin: 10vh; */
+  padding: 0;
+  /* filter: sepia(100%) hue-rotate(190deg) saturate(900%); */
+  /* position: absolute; */
 }

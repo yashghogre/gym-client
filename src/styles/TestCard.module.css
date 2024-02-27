@@ -1,0 +1,19 @@
+.imgDiv {
+    /* position: absolute; */
+    /* top: 281%; */
+    /* left: 45%; */
+}
+
+.img {
+    object-fit: contain;
+    border-radius: 100%;
+    border: solid 3px white;
+}
+
+.textDiv {
+    background-color: rgba(255, 255, 255, 0.87);
+    /* width: 30vw; */
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+}
