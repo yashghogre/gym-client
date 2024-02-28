@@ -59,12 +59,12 @@
 @media (max-width: 600px) {
     .mainDiv {
         justify-content: space-between;
-        width: 158vw;
+        width: 100vw;
     }
     
     .menuDiv {
         display: inline-block;
-        padding-right: 10vw;
+        margin-right: 5vw;
     }
     
     .midDiv, .btnDiv {
@@ -72,11 +72,11 @@
     }
 
     .titleDiv {
-        width: 50vw;
-        padding-left: 10vw;
+        /* width: 50vw; */
+        margin-left: 5vw;
     }
 
     .title {
-        font-size: 5vh;
+        font-size: 4vh;
     }
 }

@@ -1,8 +1,18 @@
+.mainDiv {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .imgDiv {
     position: relative;
     top: 10vh;
     /* top: 281%; */
     /* left: 45%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
@@ -18,4 +28,24 @@
     border-radius: 10px;
     margin-bottom: 3vh;
     padding-top: 9vh;
+}
+
+.name {
+    text-align: end;
+    font-size: 2.3vh;
+}
+
+@media (max-width: 600px) {
+    .mainDiv {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .textDiv {
+        width: 80vw;
+        margin-left: 0;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
 }

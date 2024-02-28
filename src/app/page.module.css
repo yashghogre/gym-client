@@ -162,6 +162,11 @@
   color: white;
 }
 
+.lTitle {
+  font-size: 1.7vw;
+  text-shadow: 0 0 21px white;
+}
+
 .mapDiv {
   display: flex;
   justify-content: space-around;
@@ -193,6 +198,11 @@
   background-color: #7990ed7e;
   border-radius: 10px;
   padding: 1vw 1vh;
+  width: 18vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3vh;
 }
 
 .socialIcon {
@@ -218,20 +228,74 @@
 
 @media (max-width: 600px) {
   .mmDiv {
-    width: 130vw;
+    width: 100vw;
   }
-
+  
   .main {
     flex-direction: column;
+    margin-left: 2vw;
+    /* padding-top: 0; */
   }
 
   .mainText {
-    font-size: 8vh;
+    font-size: 5vh;
     width: 100vw;
-    margin-left: 10vw;
   }
 
   .tagline {
+    font-size: 2.1vh;
     width: 100vw;
+  }
+
+  .btnDiv {
+    width: 100vw;
+    /* justify-content: space-around; */
+    /* gap: 37vw; */
+  }
+
+  .btn1, .btn2 {
+    font-size: 1.7vh;
+    padding: 2vh 10vw;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .featCard {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tTitle {
+    width: 60vw;
+    text-shadow: 0 0 20px white;
+  }
+  
+  .lTitle {
+    font-size: 3vh;
+  }
+
+  .mapDiv {
+    flex-direction: column;
+  }
+
+  .map {
+    width: 90vw;
+    height: 30vh;
+  }
+
+  .lTextDiv {
+    margin-left: 1vw;
+    width: 90vw;
+    padding: 1vh 4vw;
+  }
+
+  .socialsDiv {
+    width: 85vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
   }
 }
