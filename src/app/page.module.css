@@ -215,3 +215,23 @@
   /* filter: sepia(100%) hue-rotate(190deg) saturate(900%); */
   /* position: absolute; */
 }
+
+@media (max-width: 600px) {
+  .mmDiv {
+    width: 130vw;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .mainText {
+    font-size: 8vh;
+    width: 100vw;
+    margin-left: 10vw;
+  }
+
+  .tagline {
+    width: 100vw;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '@/styles/Navbar.module.css'
 import Link from 'next/link'
+import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
     return (
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <Link className={styles.pLink} href={'/pricing'}>
                     <p className={styles.mDP}>Pricing</p>
                 </Link>
-                <Link className={styles.pLink} href={'/'}>
+                <Link className={styles.pLink} href={'/#testimonials'}>
                     <p className={styles.mDP}>Testimonials</p>
                 </Link>
                 <Link className={styles.pLink} href={'/#location'}>
@@ -26,6 +27,9 @@ const Navbar = () => {
             </div>
             <div className={styles.btnDiv}>
                 <button className={styles.btn}>Join Now!</button>
+            </div>
+            <div className={styles.menuDiv}>
+                <IoMdMenu size={60} color='#3559E0' />
             </div>
         </div>
     )

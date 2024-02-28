@@ -12,7 +12,7 @@ export default function Home() {
       <div className={`${styles.mainDiv} ${styles.waveDiv} ${styles.wave}`}>
         <div className={styles.main}>
           <div className={styles.leftDiv}>
-            <div>
+            <div className={styles.mainTextDiv}>
               <h3 className={styles.mainText}>Your One Stop Solution to <span className={styles.span}>Fitness<Image src={'/underline.jpg'} height={500} width={500} alt="ul" className={styles.ulImg} /></span></h3>
             </div>
             <div>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.testDiv} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+      <div className={styles.testDiv} id = 'testimonials' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
         <TestTitle />
         <TestCard />
       </div>

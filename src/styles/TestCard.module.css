@@ -1,5 +1,6 @@
 .imgDiv {
-    /* position: absolute; */
+    position: relative;
+    top: 10vh;
     /* top: 281%; */
     /* left: 45%; */
 }
@@ -11,9 +12,10 @@
 }
 
 .textDiv {
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(255, 255, 255, 0.901);
     /* width: 30vw; */
     padding: 1vh 1vw;
     border-radius: 10px;
     margin-bottom: 3vh;
+    padding-top: 9vh;
 }
