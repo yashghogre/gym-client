@@ -100,3 +100,18 @@
     padding: 10px;
     color: #323232;
   }
+
+  @media (max-width: 600px) {
+    .mainDiv {
+      width: 90vw;
+    }
+    
+    .imgDiv {
+      padding: 0;
+    }
+
+    .textDiv {
+      padding: 0;
+      width: 70vw;
+    }
+  }

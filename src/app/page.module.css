@@ -226,6 +226,42 @@
   /* position: absolute; */
 }
 
+.fCardsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 5vh;
+}
+
+.featCard1 {
+  width: 55vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.featCard2 {
+  width: 55vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20vh;
+}
+
+.featCard3 {
+  width: 55vw;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -5vh;
+}
+
+.featCard4 {
+  width: 55vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20vh;
+}
+
 @media (max-width: 600px) {
   .mmDiv {
     width: 100vw;
@@ -262,12 +298,12 @@
     display: none;
   }
 
-  .featCard {
+  /* .featCard {
     margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .tTitle {
     width: 60vw;
@@ -297,5 +333,20 @@
     width: 85vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
+  }
+
+  .fCardsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    margin-left: -5vw
+  }
+
+  .featCard1, .featCard2, .featCard3, .featCard4 {
+    margin-top: 0;
+    width: 90vw;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
