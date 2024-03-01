@@ -283,6 +283,10 @@
     width: 100vw;
   }
 
+  .ulImg {
+    width: 45vw;
+  }
+
   .btnDiv {
     width: 100vw;
     /* justify-content: space-around; */

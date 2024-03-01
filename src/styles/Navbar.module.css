@@ -56,6 +56,11 @@
     display: none;
 }
 
+.menuOptDiv {
+    display: none;
+    position: absolute;
+}
+
 @media (max-width: 600px) {
     .mainDiv {
         justify-content: space-between;
