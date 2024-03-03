@@ -23,3 +23,19 @@
 .wave {
     background-image: url('./../../public/wave2.svg');
 }
+
+@media (max-width: 600px) {
+    .mainDiv {
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+    
+    .cardsDiv {
+        flex-direction: column;
+        top: 20vh;
+    }
+
+    .wave {
+        background-image: none;
+    }
+}

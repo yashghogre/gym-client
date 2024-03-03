@@ -64,3 +64,32 @@
     flex-direction: column;
     gap: 1.8vh;
 }
+
+@media (max-width: 600px) {
+    .mainDiv {
+        width: 60vw;
+    }
+
+    .titleDiv {
+        height: 4vh;
+    }
+    
+    .title {
+        font-size: 3vh;
+    }
+
+    .rlprice {
+        font-size: 2.5vh;
+    }
+
+    .ulImg {
+        position: relative;
+        height: 65px;
+        top: 0.5vh;
+    }
+
+    .mbText {
+        position: absolute;
+        color: color;
+    }
+}
