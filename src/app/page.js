@@ -3,8 +3,8 @@ import styles from "./page.module.css";
 import TrainerCard from "./components/TrainerCard";
 import FeatureCard from "./components/FeatureCard";
 import Link from "next/link";
-import TestCard from "./components/TestCard";
 import TestTitle from "./components/TestTitle";
+import TestMain from "./components/TestMain";
 
 export default function Home() {
   return (
@@ -66,7 +66,7 @@ export default function Home() {
 
       <div className={styles.testDiv} id = 'testimonials' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
         <TestTitle />
-        <TestCard />
+        <TestMain />
       </div>
 
       <div className={styles.locationDiv} id="location">
