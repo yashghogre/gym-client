@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.testDiv} id = 'testimonials' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+      <div className={styles.testDiv} id='testimonials' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
         <TestTitle />
         <TestMain />
       </div>
@@ -73,7 +73,7 @@ export default function Home() {
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><h3 className={styles.lTitle}>Contact Us!</h3></div>
         <div className={styles.mapDiv}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.64577089998542!2d78.97462819788775!3d21.099312708753647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd495277835628b%3A0xeeb90a6d36018ae8!2sYCCE%20Gauri-inn%20Hostel%20Wanadongri%20Hingna%20Road%20Nagpur!5e0!3m2!1sen!2sin!4v1708782475656!5m2!1sen!2sin" width={600} height={450} style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className={styles.map}></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d232.64577089998542!2d78.97462819788775!3d21.099312708753647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd495277835628b%3A0xeeb90a6d36018ae8!2sYCCE%20Gauri-inn%20Hostel%20Wanadongri%20Hingna%20Road%20Nagpur!5e0!3m2!1sen!2sin!4v1708782475656!5m2!1sen!2sin" width={600} height={450} style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className={styles.map}></iframe>
           </div>
           <div className={styles.lTextDiv}>
             <div className={styles.cInfoDiv}>

@@ -1,22 +1,20 @@
 'use client'
 
-import TestCard from '@/app/components/TestCard'
+import TestCard from './TestCard'
 import styles from '@/styles/Sliding.module.css'
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
 
-const TestMain = () => {
+const Sliding = () => {
     return (
         <>
             <Swiper
-                pagination={{
-                    dynamicBullets: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
+                spaceBetween={50}
+                slidesPerView={3}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide className={styles.slider}><TestCard /></SwiperSlide>
                 <SwiperSlide className={styles.slider}><TestCard /></SwiperSlide>
@@ -26,4 +24,4 @@ const TestMain = () => {
     )
 }
 
-export default TestMain
+export default Sliding
