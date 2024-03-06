@@ -30,6 +30,17 @@ const Navbar = () => {
         setMenuDisplay('none')
     }
 
+    const vars = {
+        initial: { opacity: 0 },
+        animate: {
+            opacity: 1,
+            transition: { delayChildren: 0.5 }
+        },
+        exit: {
+            opacity: 0,
+        }
+    }
+
     return (
         <div className={styles.mainDiv}>
             <div className={styles.titleDiv}>
@@ -57,14 +68,16 @@ const Navbar = () => {
             <div className={styles.menuDiv} onClick={menuClick}>
                 <IoMdMenu size={50} color='#3559E0' />
             </div>
-            <div className={styles.menuOptDiv} style={{ display: menuDisplay }}>
+            {menuDisplay === 'block' && <motion.div
+                variants={vars} initial='initial' animate='animate' exit='exit' className={styles.menuOptDiv} style={{ display: menuDisplay }}>
                 <ul className={styles.list}>
                     <li className={styles.listLink} onClick={() => { router.push('/#features'); setMenuDisplay('none'); }}>Features</li>
                     <li className={styles.listLink} onClick={pushPricing}>Pricing</li>
                     <li className={styles.listLink} onClick={() => { router.push('/#testimonials'); setMenuDisplay('none'); }}>Testimonials</li>
                     <li className={styles.listLink} onClick={() => { router.push('/#location'); setMenuDisplay('none'); }}>Contact Us!</li>
                 </ul>
-            </div>
+            </motion.div>
+            }
         </div>
     )
 }
