@@ -5,7 +5,7 @@ import styles from '@/styles/Navbar.module.css'
 import Link from 'next/link'
 import { IoMdMenu } from "react-icons/io";
 import { useRouter } from 'next/navigation';
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 
 const Navbar = () => {
 
@@ -34,7 +34,7 @@ const Navbar = () => {
         initial: { opacity: 0 },
         animate: {
             opacity: 1,
-            transition: { delayChildren: 0.5 }
+            // transition: { delayChildren: 0.5 }
         },
         exit: {
             opacity: 0,
@@ -68,16 +68,23 @@ const Navbar = () => {
             <div className={styles.menuDiv} onClick={menuClick}>
                 <IoMdMenu size={50} color='#3559E0' />
             </div>
-            {menuDisplay === 'block' && <motion.div
-                variants={vars} initial='initial' animate='animate' exit='exit' className={styles.menuOptDiv} style={{ display: menuDisplay }}>
-                <ul className={styles.list}>
-                    <li className={styles.listLink} onClick={() => { router.push('/#features'); setMenuDisplay('none'); }}>Features</li>
-                    <li className={styles.listLink} onClick={pushPricing}>Pricing</li>
-                    <li className={styles.listLink} onClick={() => { router.push('/#testimonials'); setMenuDisplay('none'); }}>Testimonials</li>
-                    <li className={styles.listLink} onClick={() => { router.push('/#location'); setMenuDisplay('none'); }}>Contact Us!</li>
-                </ul>
-            </motion.div>
-            }
+            <AnimatePresence>
+                {menuDisplay === 'block' && <motion.div
+                    variants={vars}
+                    initial='initial'
+                    animate='animate'
+                    exit='exit'
+                    transition={{ease: 'backInOut', duration: 0.25}}
+                    className={styles.menuOptDiv} style={{ display: menuDisplay }}>
+                    <ul className={styles.list}>
+                        <li className={styles.listLink} onClick={() => { router.push('/#features'); setMenuDisplay('none'); }}>Features</li>
+                        <li className={styles.listLink} onClick={pushPricing}>Pricing</li>
+                        <li className={styles.listLink} onClick={() => { router.push('/#testimonials'); setMenuDisplay('none'); }}>Testimonials</li>
+                        <li className={styles.listLink} onClick={() => { router.push('/#location'); setMenuDisplay('none'); }}>Contact Us!</li>
+                    </ul>
+                </motion.div>
+                }
+            </AnimatePresence>
         </div>
     )
 }

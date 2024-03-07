@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.testDiv} id='testimonials' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+      <div className={styles.testDiv} id='testimonials' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row', gap: '5vw' }}>
         <TestTitle />
         <TestMain />
       </div>
