@@ -63,7 +63,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className={styles.btnDiv}>
-                <button className={styles.btn}>Join Now!</button>
+                <button className={styles.btn}>Join</button>
             </div>
             <div className={styles.menuDiv} onClick={menuClick}>
                 <IoMdMenu size={50} color='#3559E0' />
